@@ -2,7 +2,7 @@
     <div>
         <div class="recommend-title">热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id" >
+            <li class="item border-bottom" v-for="item of list" :key="item.id" >
                     <img class="item-img" :src="item.imgUrl">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -17,31 +17,15 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1606/74/74f937d6d4b0d4cb90.water.jpg_200x200_63a86b4c.jpg',
-        title: '白鹿温泉加勒比水上乐园',
-        desc: '白鹿温泉水上乐园是白鹿温泉的升级项目'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1606/74/74f937d6d4b0d4cb90.water.jpg_200x200_63a86b4c.jpg',
-        title: '白鹿温泉加勒比水上乐园',
-        desc: '白鹿温泉水上乐园是白鹿温泉的升级项目'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1606/74/74f937d6d4b0d4cb90.water.jpg_200x200_63a86b4c.jpg',
-        title: '白鹿温泉加勒比水上乐园',
-        desc: '白鹿温泉水上乐园是白鹿温泉的升级项目'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
 
 <style lang="stylus" scoped>
 .recommend-title
+    font-weight:bold
     line-height:.8rem
     background:#ccc
     text-indent:.2rem
@@ -59,6 +43,7 @@ export default {
         padding:.1rem
         min-width:0
         .item-title
+            font-weight:bold
             overflow:hidden
             white-space:nowrap
             text-overflow: ellipsis

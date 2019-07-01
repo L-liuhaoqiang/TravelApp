@@ -18,10 +18,10 @@ export default {
       },
       swiperList: [{
         id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1805/43/149bfb40dbd72502.jpg_890x330_f33c6167.jpg'
+        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20196/e440c31af79c0b9d1a1e84c577205562.jpg_750x200_0729c45b.jpg'
       }, {
         id: '0002',
-        imgUrl: 'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20196/3023a48ac15c1eac49417c4db3aba980.jpg_890x330_3791e10b.jpg'
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1708/f1/ee65a13642c95c02.jpg_750x200_3440fec0.jpg'
       }]
     }
   }
@@ -31,12 +31,11 @@ export default {
 <style lang="stylus" scoped>
   .wrapper >>> .swiper-pagination-bullet-active
     background: #fff
-    margin-bottom:4%
   .wrapper
     overflow: hidden
     width: 100%
     height: 0
-    padding-bottom: 31.25%
+    padding-bottom: 26.25%
     background: #eee
     .swiper-img
       width: 100%
